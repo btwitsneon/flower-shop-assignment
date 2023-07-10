@@ -22,19 +22,20 @@ html,
 body {
     font-size: 16px;
     line-height: 1.1;
-    color: #1F1B18;
+    color: #272727;
     font-family: 'Lato', sans-serif;
 }
 a,
 a:hover {
-    color: #1F1B18;
+    color: #272727;
     text-decoration: none;
 }
 
 button {
     outline: none;
     background-color: #E55473;
-    padding: .8rem 2rem;
+    padding: 1.2rem 3rem;
+    font-size: .9rem;
     border-radius: .5rem;
     color: #fff;
     border: none;
@@ -61,6 +62,11 @@ svg {
 }
 .flex-space {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -73,10 +79,39 @@ svg {
 .justify-space {
     justify-content: space-between;
 }
-
+.align-stretch {
+    align-items: stretch;
+}
 .container {
     padding: 0 90px;
 }
+
+
+/* default style */
+
+section {
+    padding: 8rem 0;
+}
+section header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+section header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+section header p {
+    color: rgba(39, 39, 39, 0.60);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    width: 37.125rem;
+    margin: 0 auto;
+}
+
 
 /* Header */
 header.banner nav {
@@ -85,8 +120,8 @@ header.banner nav {
     left: 90px;
     padding: .5rem 1rem;
     transform: translateX(-1rem);
-    background-color: rgba(249, 223, 228, .8);
-    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(229, 84, 115, 0.10);
+    backdrop-filter: saturate(180%) blur(7px);
 }
 header.banner nav * {
     color: rgba(229, 84, 115, .8);
@@ -107,7 +142,7 @@ header.banner nav h1.logo {
 
 header.banner,
 header.banner .banner-inner {
-    background-color: rgba(229, 84, 115, 0.10);
+    background-color: rgba(229, 84, 115, 0.05);
     height: 100%;
 }
 header.banner .banner-inner {
@@ -121,7 +156,6 @@ header.banner .banner-inner .banner-info * {
     margin-bottom: 20px;
 }
 header.banner .banner-inner .banner-info h1 {
-    color: #272727;
     font-size: 4rem;
 }
 header.banner .banner-inner .banner-info p {
@@ -139,4 +173,72 @@ header.banner .banner-inner .banner-img {
 header.banner .banner-inner .banner-img img {
     object-fit: contain;
     object-position: center bottom;
+}
+
+/* FEATURED SECTION */
+section.featured main > .featured-container {
+    gap: 1.5rem;
+    margin-bottom: 8rem;
+}
+section.featured main .featured-flower_box {
+    flex: 1;
+    text-align: center;
+}
+section.featured main .featured-flower_box .featured-img {
+    border-radius: 9999px 9999px 0rem 0rem;
+    height: 100%;
+    padding: 7rem 20% 0;
+    margin-bottom: 2rem;
+}
+section.featured main .featured-flower_box .featured-img .featured-img_inner {
+    width: 20rem;
+    height: 100%;
+    max-width: 100%;
+    max-height: 25rem;
+    margin: auto;
+}
+section.featured main .featured-flower_box .featured-img .featured-img_inner img {
+    object-fit: contain;
+    object-position: bottom;
+}
+section.featured main .featured-flower_box.second-box .featured-img .featured-img_inner img {
+    object-position: center;
+}
+section.featured main .featured-flower_box.first-box .featured-img {
+    background-color: rgba(167, 33, 98, 0.15);
+}
+section.featured main .featured-flower_box.second-box .featured-img {
+    background-color: rgba(5, 151, 160, 0.15);
+}
+section.featured main .featured-flower_box.third-box .featured-img {
+    background-color: rgba(71, 125, 17, 0.15);
+}
+section.featured main .featured-flower_box .featured-text {
+    color: #272727;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+/* FAVOR SECTION */
+
+.favor {
+    border-radius: 0.5rem;
+    background: rgba(39, 39, 39, 0.05);
+    padding: 4rem 10rem;
+    gap: 1.5rem;
+}
+.favor .favor-box {
+    text-align: center;
+}
+.favor .favor-box .icon {
+    display: block;
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: 0 auto 1.5rem;
+}
+.favor .favor-box h4 {
+    color: rgba(39, 39, 39, 0.80);
+    font-size: 1rem;
+    font-weight: 600;
 }
