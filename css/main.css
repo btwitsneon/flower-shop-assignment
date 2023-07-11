@@ -41,8 +41,14 @@ button {
     border: none;
     font-weight: 700;
     cursor: pointer;
+    transition: transform 200ms ease;
 }
-button:active {
+.button {
+    cursor: pointer;
+    transition: transform 200ms ease;
+}
+button:active,
+.button:active {
     transform: scale(.99);
 }
 
@@ -338,4 +344,53 @@ footer p.copyright {
     text-align: center;
     font-size: .95rem;
     font-weight: 400;
+}
+
+
+/* FIELDS */
+section.fields > div {
+    border-bottom: 2px solid #F6E0CE;
+}
+section.fields .field_cover {
+    width: 60%;
+}
+section.fields .field_cover .field_cover-inner {
+    height: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+section.fields .field-details {
+    width: 40%;
+}
+section.fields .title {
+    text-align: left;
+}
+section.fields .title span {
+    display: block;
+    color: #AA6610;
+}
+section.fields .field_info {
+    gap: 3.5rem;
+}
+section.fields .field_info .button:active {
+    transform: scale(.96);
+}
+section.fields .field_info .field-icon {
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 9999px;
+    background-image: linear-gradient(to bottom,rgba(170, 102, 16, 0.10) 0 5%,#fff0 10%), linear-gradient(to right,rgba(170, 102, 16, 0.10) 0 5%,#fff0 10%);
+    background-position: top, center;
+    background-repeat: space repeat;
+    background-size: .5px 12px, 12px .5px;
+    border: 1px solid #AA6610;
+    will-change: background-color;
+    transition: background-color 200ms ease;
+}
+section.fields .field_info .field-icon:hover {
+    background-color: rgba(170, 102, 16, 0.20);
+}
+section.fields .field_info .field-icon img {
+    object-fit: contain;
 }
