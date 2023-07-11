@@ -33,7 +33,7 @@ a:hover {
 
 button {
     outline: none;
-    background-color: #E55473;
+    background-color: #9e2301;
     padding: 1.2rem 3rem;
     font-size: .9rem;
     border-radius: .5rem;
@@ -152,16 +152,16 @@ header.banner nav {
     top: 10%;
     left: clamp(90px, 10vw, 12rem);
     padding: .5rem 1rem;
-    background-color: rgba(229, 84, 115, 0.10);
+    background-color: rgba(158, 35, 1, .10);
     backdrop-filter: saturate(180%) blur(15px);
 }
 header.banner nav * {
-    color: rgba(229, 84, 115, .8);
+    color: rgba(158, 35, 1, .8);
     will-change: color;
     transition: color 200ms ease;
 }
 header.banner nav:hover * {
-    color: rgba(229, 84, 115, 1);
+    color: rgba(158, 35, 1, 1);
 }
 header.banner nav .logo_icon {
     width: .85rem;
@@ -174,7 +174,7 @@ header.banner nav h1.logo {
 
 header.banner,
 header.banner .banner-inner {
-    background-color: rgba(229, 84, 115, 0.05);
+    background-color: rgba(158, 35, 1, .05);
     height: 100%;
 }
 header.banner .banner-inner {
@@ -278,7 +278,7 @@ section.featured main .featured-flower_box .featured-text {
 /* DEALS SECTION */
 section.deals {
     border-radius: 0.5rem;
-    background: rgba(229, 84, 115, 0.05);
+    background: rgba(158, 35, 1, .05);
 }
 section.deals main .title {
     width: 60%;
@@ -290,7 +290,7 @@ section.deals main .title {
     margin: 0;
 }
 section.deals main .title h1 span {
-    color: #E55473;
+    color: #9e2301;
 }
 
 section.deals main .deals-cover .cover-img {
@@ -334,7 +334,7 @@ footer {
     color: #fff;
 }
 footer .title h1 span {
-    color: #E55473;
+    color: #e6785a;
 }
 footer .title p {
     color: rgba(255, 255, 255, 0.90);
