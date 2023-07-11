@@ -355,7 +355,11 @@ section.fields > div {
     border-bottom: 2px solid #F6E0CE;
 }
 section.fields .field_cover {
+    align-self: flex-end;
     width: 60%;
+}
+section.fields .field_cover .field_cover-inner img {
+    vertical-align: bottom;
 }
 section.fields .field_cover .field_cover-inner {
     height: 100%;
