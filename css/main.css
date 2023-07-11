@@ -52,6 +52,26 @@ svg {
     height: 100%;
 }
 
+input,
+input::placeholder {
+    font-family: 'Lato', sans-serif;
+    background: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgba(39, 39, 39, 0.60);
+    font-size: .85rem;
+    font-weight: 400;
+    
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    color: #272727;
+    font-weight: 600;
+}
 /* Reused Styles */
 .flex {
     display: flex;
@@ -89,21 +109,25 @@ svg {
 
 /* default style */
 
-section {
+section,
+footer {
     padding: 8rem 0;
 }
-section header {
+section header,
+section .title {
     text-align: center;
     margin-bottom: 4rem;
 }
 
-section header h1 {
-    font-size: 2.5rem;
+section header h1,
+section .title h1 {
+    font-size: 2rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
 }
 
-section header p {
+section header p,
+section .title p {
     color: rgba(39, 39, 39, 0.60);
     font-size: 1.1rem;
     font-weight: 400;
@@ -111,7 +135,10 @@ section header p {
     width: 37.125rem;
     margin: 0 auto;
 }
-
+section header button,
+section .title button {
+    margin-top: 2rem;
+}
 
 /* Header */
 header.banner nav {
@@ -119,9 +146,8 @@ header.banner nav {
     top: 10%;
     left: 90px;
     padding: .5rem 1rem;
-    transform: translateX(-1rem);
     background-color: rgba(229, 84, 115, 0.10);
-    backdrop-filter: saturate(180%) blur(7px);
+    backdrop-filter: saturate(180%) blur(15px);
 }
 header.banner nav * {
     color: rgba(229, 84, 115, .8);
@@ -233,12 +259,68 @@ section.featured main .featured-flower_box .featured-text {
 }
 .favor .favor-box .icon {
     display: block;
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 5rem;
+    height: 5rem;
     margin: 0 auto 1.5rem;
 }
 .favor .favor-box h4 {
     color: rgba(39, 39, 39, 0.80);
     font-size: 1rem;
     font-weight: 600;
+}
+
+/* DEALS SECTION */
+section.deals {
+    border-radius: 0.5rem;
+    background: rgba(229, 84, 115, 0.05);
+}
+section.deals main .title {
+    width: 60%;
+}
+section.deals main .deals-cover {
+    width: 40%;
+}
+section.deals main .title {
+    margin: 0;
+}
+section.deals main .title h1 span {
+    color: #E55473;
+}
+
+section.deals main .deals-cover .cover-img {
+    width: 19.875rem;
+    height: 26.25rem;
+}
+
+/* SHOWCASE SECTION */
+section.showcase .gallery .gallery-item {
+    max-width: 25%;
+    max-height: 25rem;
+}
+section.showcase .gallery .gallery-item img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* NEWSLETTER SECTION */
+section.newsletter .newsletter-container{
+    border-radius: 0.5rem;
+    background: center / cover url('../assets/images/Rectangle\ 9.png');
+    padding: 8rem 15vw;
+}
+section.newsletter main {
+    gap: 1rem;
+}
+
+section.newsletter main .input-wrapper {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0 1.2rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111010;
+    color: #fff;
 }
