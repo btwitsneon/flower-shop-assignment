@@ -317,7 +317,7 @@ section.newsletter .newsletter-container{
     background: center / cover url('../assets/images/Rectangle\ 9.png');
     padding: 8rem 15vw;
 }
-section.newsletter main {
+section.newsletter main form {
     gap: 1rem;
 }
 
